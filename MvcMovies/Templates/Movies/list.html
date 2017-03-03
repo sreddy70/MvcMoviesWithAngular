@@ -1,0 +1,69 @@
+﻿<div class="container-fluid" ng-init="List()">
+
+	<div class="row">
+		<div class="col-xs-12">
+			<h1 class="page-header">
+				Movies <small>Listing</small>
+			</h1>
+			<ol class="breadcrumb">
+				<li class="active">
+					<i class="fa fa-video-camera"></i> Movies
+				</li>
+			</ol>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12">
+			<!--<div>Select All {{ selectAll }}</div>
+			<div>Selected Rows {{ selectedRowsIdx }}</div>
+			<div>Selected {{ selectedRowCount }} rows</div>-->
+			<div class="bs-loading-container centerspinner" bs-loading-overlay>
+				<div class="table-responsive">
+					<table class="table table-condensed table-hover">
+						<thead>
+							<tr>
+								<th class="col-xs-1 text-center"><label><input type="checkbox" ng-checked="selectAll" ng-click="ToggleSelectAll()" />Select All</label></th>
+								<th class="col-xs-1 text-center">S.No.</th>
+								<th class="col-xs-4">Title</th>
+								<th class="col-xs-2">Release Date</th>
+								<th class="col-xs-2">Genre</th>
+								<th class="col-xs-2">Price</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="x in movies" ng-click="ToggleSelectRow(x)">
+								<td class="text-center"><input type="checkbox" ng-checked="x.checked" /></td>
+								<td class="text-center">{{ x.id }}</td>
+								<td>{{ x.title }}</td>
+								<td>{{ x.releaseDate }}</td>
+								<td>{{ x.genre }}</td>
+								<td class="text-right">{{ x.price }}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-4"></div>
+		<div class="col-xs-4">
+			<div class="col-xs-4 text-center">
+				<button type="button" class="btn btn-danger" ng-disabled="btnDisableEditMovies" ng-click="EditRow()">Edit</button>
+			</div>
+			<div class="col-xs-4 text-center">
+				<button type="button" class="btn btn-danger" ng-disabled="btnDisableAddMovies" ng-click="AddRow()">Add</button>
+			</div>
+			<div class="col-xs-4 text-center">
+				<button type="button" class="btn btn-danger" ng-disabled="btnDisableDeleteMovies" ng-click="Delete()">Delete</button>
+			</div>
+		</div>
+		<div class="col-xs-4"></div>
+
+		<!--<div class="col-xs-6"></div>-->
+
+		<!--<div class="col-xs-6"></div>-->
+	</div>
+	<div><br /></div>
+</div>o

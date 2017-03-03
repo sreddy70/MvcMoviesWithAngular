@@ -1,0 +1,10 @@
+﻿
+/* Style to center the spinner the current container */
+.centerspinner {
+	position: relative;
+}
+
+.uigridDimension {
+    width: auto;
+    height: auto;
+}

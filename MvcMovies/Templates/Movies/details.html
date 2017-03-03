@@ -1,0 +1,69 @@
+﻿
+<div class="container-fluid" ng-init="getDetails()">
+
+	<div class="row">
+		<div class="col-xs-12">
+			<h1 class="page-header">
+				Movies <small>Add</small>
+			</h1>
+			<ol class="breadcrumb">
+				<li class="active">
+					<i class="fa fa-video-camera"></i> Movies
+				</li>
+			</ol>
+		</div>
+	</div>
+
+	<div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="bs-loading-container centerspinner" bs-loading-overlay>
+					
+					<form name="frmAddMovie" ng-submit="Save()" role="form" class="form-group-sm">
+						<div class="row">
+							<div class="col-xs-6" ng-class="{ 'has-error': form.title.$dirty && form.title.$error.required }">
+								<label for="title">Title</label>
+								<input type="text" name="title" id="title" class="form-control" ng-model="movie.title" required />
+								<span ng-show="frmAddMovie.title.$dirty && form.title.$error.required" class="help-block">Title is required.</span>
+							</div>
+							<div class="col-xs-6" ng-class="{ 'has-error': form.releaseDate.$dirty && form.releaseDate.$error.required }">
+								<label for="password">Release Date</label>
+								<input type="date" name="releaseDate" id="releaseDate" class="form-control" ng-model="movie.releaseDate" required />
+								<span ng-show="frmAddMovie.releaseDate.$dirty && form.releaseDate.$error.required" class="help-block">Specify the release date</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6" ng-class="{ 'has-error': form.price.$dirty && form.price.$error.required }">
+								<label for="price">Price</label>
+								<input type="text" name="price" id="price" class="form-control" ng-model="movie.price" />
+							</div>
+							<div class="col-xs-6" ng-class="{ 'has-error': form.releaseDate.$dirty && form.releaseDate.$error.required }">
+								<label for="password">Genre</label>
+								<input type="text" name="genre" id="genre" class="form-control" ng-model="movie.genre" required />
+								<span ng-show="frmAddMovie.genre.$dirty && form.genre.$error.required" class="help-block">Genre is required.</span>
+							</div>
+						</div>
+						<br />
+						<div class="row">
+							<div class="form-actions">
+								<div class="col-xs-4"></div>
+								<div class="col-xs-2 text-center">
+									<button type="button" class="btn btn-danger" ng-click="Back()">Back</button>
+								</div>
+								<div class="col-xs-2 text-center">
+									<button type="submit" ng-disabled="frmAddMovie.$invalid" class="btn btn-danger">Save</button>
+								</div>
+								<div class="col-xs-4"></div>
+							</div>
+						</div>
+					</form>
+
+				</div>
+			</div>
+
+		</div>
+		
+	</div>
+	<!--<div class="row">Data-{{ movie | json }}<br /></div>-->
+
+</div>

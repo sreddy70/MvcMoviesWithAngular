@@ -1,0 +1,97 @@
+﻿<!doctype html>
+<html lang="" ng-app="MvcMovies">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+			<!-- Bootstrap Core CSS -->
+			<link href="Content/bootstrap.css" rel="stylesheet" />
+
+			<!-- Custom Fonts -->
+			<link href="Content/font-awesome.min.css" rel="stylesheet" type="text/css" />
+			<!--App specific CSS-->
+			<link href="Content/Custom.css" rel="stylesheet" />
+
+			<!-- Angular js -->
+			<script src="Scripts/lib/angular.js"></script>
+			<script src="Scripts/lib/angular-animate.js"></script>
+			<script src="Scripts/lib/angular-ui-router.js"></script>
+			<!-- Lib. for using angular with bootstrap -->
+			<script src="Scripts/lib/angular-ui/ui-bootstrap.js"></script>
+			<!-- Lib. for Spinner -->
+			<script src="Scripts/lib/angular-loading-overlay/angular-loading-overlay.js"></script>
+			<script src="Scripts/lib/angular-loading-overlay/angular-loading-overlay-spinjs.js"></script>
+			<!-- Lib. for angular' ui grid  (requires angular-animate.js)-->
+			<link href="Content/ui-grid-4.0.css" rel="stylesheet" />
+			<script src="Scripts/lib/angular-ui-grid/ui-grid-4.0.js"></script>
+			
+
+			<!-- application js files -->
+			<script src="Scripts/app.js"></script>
+			<script src="Scripts/navigation-controller.js"></script>
+			<script src="Scripts/controllers.js"></script>
+			<script src="Scripts/services.js"></script>
+
+			<style>
+				.navbar-fixed-left {
+					width: 140px;
+					position: fixed;
+					border-radius: 0;
+					height: 100%;
+				}
+
+				.navbar-fixed-left .navbar-nav > li {
+					float: none; /* Cancel default li float: left */
+					width: 139px;
+				}
+
+				.navbar-fixed-left + .container {
+					padding-left: 160px;
+				}
+
+				/* On using dropdown menu (To right shift popuped) */
+				.navbar-fixed-left .navbar-nav > li > .dropdown-menu {
+					margin-top: -50px;
+					margin-left: 140px;
+				}
+
+				.appbody {
+					height: 100%;
+					background-color: burlywood;
+					margin-top: 50px;
+					margin-left: 140px;
+				}
+
+				@media screen and (max-width: 768px) {
+					.appbody {
+						margin-top: 50px;
+						margin-left: 0;
+					}
+				}
+
+			</style>
+
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div>
+            <!-- Add content here -->
+            <div ng-include="'Templates/navigation.html'"></div>
+						<div class="appbody">
+							<ui-view></ui-view>
+						</div>
+        </div>
+
+
+    </body>                  
+</html>

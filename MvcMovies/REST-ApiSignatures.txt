@@ -1,0 +1,8 @@
+GET 	/moviesapi/Movies				/moviesapi/Movies/All
+GET 	/moviesapi/Movies/1				/moviesapi/Movies/ById/1
+
+POST 	/moviesapi/Movies		- data		/moviesapi/Movies/CreateNew
+
+PUT 	/moviesapi/Movies		- data		/moviesapi/Movies/Update
+
+DELETE 	/moviesapi/Movies/1				/moviesapi/Movies/Delete

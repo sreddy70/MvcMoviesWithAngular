@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "less/bordered-pulled.css",
+    "inputFile": "less/bordered-pulled.less"
+  },
+  {
+    "outputFile": "less/font-awesome.css",
+    "inputFile": "less/font-awesome.less"
+  }
+]
