@@ -267,11 +267,6 @@
     <Content Include="Scripts\lib\angular-animate.min.js.map" />
     <Content Include="Scripts\lib\angular-loading-overlay\angular-loading-overlay-spinjs.js" />
     <Content Include="Scripts\lib\angular-loading-overlay\angular-loading-overlay.js" />
-<<<<<<< HEAD
-=======
-    <Content Include="Scripts\lib\jquery-3.1.0.js" />
-    <Content Include="Scripts\lib\jquery-3.1.0.min.js" />
->>>>>>> 11742a5... First commit
     <Content Include="Scripts\lib\angular-mocks.js" />
     <Content Include="Scripts\lib\angular-ui-router.js" />
     <Content Include="Scripts\lib\angular-ui-router.min.js" />
@@ -288,10 +283,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Scripts\app.js" />
-<<<<<<< HEAD
-=======
-    <Content Include="Scripts\lib\jquery.js" />
->>>>>>> 11742a5... First commit
     <Content Include="Scripts\lib\_references.js" />
     <Content Include="Partials\blank.html" />
     <Content Include="Scripts\navigation-controller.js" />
@@ -391,10 +382,6 @@
     <Content Include="scss\_stacked.scss" />
     <Content Include="scss\_variables.scss" />
     <Content Include="Scripts\lib\angular.min.js.map" />
-<<<<<<< HEAD
-=======
-    <Content Include="Scripts\lib\jquery-3.1.0.min.map" />
->>>>>>> 11742a5... First commit
     <Content Include="Scripts\lib\angular-touch.min.js.map" />
   </ItemGroup>
   <ItemGroup>
