@@ -3,7 +3,6 @@ angular.module('MvcMovies', [
     'ui.bootstrap',
     'ngAnimate',
     'ui.router',
-    'ui.grid',
     'bsLoadingOverlay',
     'bsLoadingOverlaySpinJs',
     'MvcMovies.Navigation',
